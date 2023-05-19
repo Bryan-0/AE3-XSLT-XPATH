@@ -1,0 +1,199 @@
+/* 
+Importamos clases semanticas utiles que hemos creado en distintos directorios para agilizar un poco la escritura de HTML
+evitando venir a crear clases css para cada etiqueta.
+*/
+@import "./flex.css";
+@import "./text.css";
+@import "./paddings.css";
+@import "./borders.css";
+
+/* Reset a los valores por defecto de margin y padding */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Seteamos nuestro custom h1 con colores y sizes */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #444444;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #444444;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #444444;
+}
+
+/* Customizamos nuestros inputs y textarea */
+
+input {
+    display: block;
+    width: 300px;
+    padding: 8px 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+}
+
+input:focus {
+    border-color: #aaa;
+    outline: none;
+}
+
+fieldset {
+    border: 1px solid #6c6c6c;
+}
+
+legend {
+    font-size: 20px;
+    color: #444444;
+}
+
+textarea {
+    display: block;
+    width: 91vw;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #aaa;
+}
+
+/* Creamos un estilo de tabla suave, con colores suaves. y vamos intercalando el color del tr sobre cada fila par */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+    margin: 20px 0;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #666;
+    border: 1px solid #ddd;
+}
+
+td {
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* seguimos la tematica suave con la lista, utilizamos el :before para crear las viñetas a nuestro propio estilo. */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 0 0 0 30px;
+    position: relative;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+}
+
+li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #999;
+}
+
+/* Boton para enviar en el formulario, tematica color del logo de edix */
+button {
+    display: inline-block;
+    background-color: #9449d3;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7b37b6;
+}
+
+/* Adaptamos el select a la tematica suave, como se explica abajo, se hace uso de un background image para mejorar el "chevrot-down" que traen los select por defecto */
+select {
+    display: block;
+    width: 420px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+    appearance: none;
+
+    /* Agregamos una flecha apuntando hacia abajo al fondo del select para que se mantenga como el estilo de un dropdown */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+
+select:focus {
+    border-color: #aaa;
+    outline: none;
+}
+
+select option {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+/* adaptamos las etiquetas a con colores suaves, y una pequeña animacion */
+a {
+    color: #333333;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+
+a:hover {
+    color: #555555;
+}
