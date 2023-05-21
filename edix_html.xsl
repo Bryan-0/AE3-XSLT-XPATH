@@ -26,7 +26,7 @@
                         </h2>
                     </div>
                     <div class="flex flex-direction-column font-size-20 gap-1">
-                        <div>Tel. +34 91 787 39 91</div>
+                        <div>Tel. <xsl:value-of select="ite/telefono" /></div>
                         <div class="flex gap-1">
                             <div>
                                 <a href="{$edix-web}">Página Web</a>
@@ -201,7 +201,7 @@
                                 </div>
                             </fieldset>
                             <br />
-                            <div class="text-center"> 
+                            <div class="text-center">
                                 <button>Enviar</button>
                             </div>
                         </form>

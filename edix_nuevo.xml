@@ -6,13 +6,13 @@
       <telefono>+34 91 787 39 91</telefono>
    </contacto>
    <profesores>
-      <profesor id="1" nombre="Félix"/>
-      <profesor id="2" nombre="Raúl"/>
-      <profesor id="3" nombre="Raquel"/>
-      <profesor id="4" nombre="Tomás"/>
+      <profesor id="1" nombre="Félix" />
+      <profesor id="2" nombre="Raúl" />
+      <profesor id="3" nombre="Raquel" />
+      <profesor id="4" nombre="Tomás" />
    </profesores>
-   <director nombre="Chon" despacho="Numero 31, 3ª Planta, Edificio A"/>
-   <director nombre="Dani" despacho="Numero 27, 2ª Planta, Edificio B"/>
+   <director nombre="Chon" despacho="Numero 31, 3ª Planta, Edificio A" />
+   <jefe_estudios nombre="Dani" despacho="Numero 27, 2ª Planta, Edificio B" />
    <ciclos>
       <ciclo nombre="Administración de Sistemas Informáticos en Red">
          <id>ASIR</id>

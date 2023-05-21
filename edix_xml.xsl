@@ -36,16 +36,18 @@
 
             <xsl:variable name="nombre_jefe" select="ite/jefe_estudios/nombre" />
             <xsl:variable name="despacho_jefe" select="ite/jefe_estudios/despacho" />
-            <director nombre="{$nombre_jefe}" despacho="{$despacho_jefe}" />
+            <jefe_estudios nombre="{$nombre_jefe}" despacho="{$despacho_jefe}" />
 
             <ciclos>
                 <xsl:for-each select="/ite/ciclos/ciclo">
                     <xsl:variable name="nombre_grado" select="nombre" />
-                <ciclo nombre="{$nombre_grado}">
+                <ciclo
+                        nombre="{$nombre_grado}">
                         <id>
                             <xsl:value-of select="@id" />
                         </id>
-                        <grado_decreto>Grado: <xsl:value-of select="grado" /> - Decreto: <xsl:value-of select="decretoTitulo/@año" /></grado_decreto>
+                        <grado_decreto>Grado: <xsl:value-of select="grado" /> - Decreto: <xsl:value-of
+                                select="decretoTitulo/@año" /></grado_decreto>
                     </ciclo>
                 </xsl:for-each>
             </ciclos>
